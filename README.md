@@ -20,7 +20,7 @@ Material para presentar en el taller de RI en la INFONOR 2017
 
 ## Parametros:
 
-1.	**q**: Aquí es posible ingresar los parámetros principales de la consulta, donde es posible buscar por campo o por el valor de un campo. Algunas variantes de estas son las siguientes:
+1.	**q (query)**: Aquí es posible ingresar los parámetros principales de la consulta, donde es posible buscar por campo o por el valor de un campo. Algunas variantes de estas son las siguientes:
       + `*:*: Buscar en cualquier campo, cualquier valor.`
       + `[Nombre Campo].*: Buscar todos los valores de un campo específico.`
       + `*.[valor] : Busca un valor especifico en todos los campos.`
