@@ -3,15 +3,11 @@ Material para presentar en el taller de RI en la INFONOR 2017
 
 # SolR
 
-## [Tutorial SolR](https://github.com/aperezf/TallerInfonor-RI/blob/master/solr.md)
-
-
-
-  
+## [Comandos SolR](https://github.com/aperezf/TallerInfonor-RI/blob/master/solr.md)
 
 # ELK
 
-## ElasticSearch
+## [Comandos ElasticSearch](https://github.com/aperezf/TallerInfonor-RI/blob/master/elasticsearch.md)
 
 
 
