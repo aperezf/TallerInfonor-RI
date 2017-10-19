@@ -2,7 +2,7 @@
 Material para presentar en el taller de RI en la INFONOR 2017
 
 ## Requerimientos
-+     [cURL](https://curl.haxx.se/)
++ [cURL](https://curl.haxx.se/)
 
 # SolR
 
