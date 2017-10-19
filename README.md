@@ -1,6 +1,8 @@
 # TallerInfonor-RI
 > Material para presentar en el taller de RI en la INFONOR 2017
 
+## Requerimientos
+      [cURL](https://curl.haxx.se/)
 # SolR
 
 ## Iniciar SolR
@@ -32,7 +34,7 @@
 ## AdminUI
 + `<IP>:<port>/solr`
 
-
+  
 
 # ELK
 
