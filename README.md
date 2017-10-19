@@ -4,16 +4,16 @@ Material para presentar en el taller de RI en la INFONOR 2017
 # SolR
 
 ## Iniciar SolR
-+ bin/solr start
++ `bin/solr start`
 
 ## Crear core
-+ bin/solr -c <nombre_core>
++ `bin/solr -c <nombre_core>`
 
 ## Indexar archivo
-+ bin/post -c <nombre_core> <ruta_archivo>
++ `bin/post -c <nombre_core> <ruta_archivo>`
 
 ## Busqueda 
-+ cURL -XGET 'http://localhost:8983/solr/<nombre_core>/select?<parametro>=<valor>&..'
++ `cURL -XGET 'http://localhost:8983/solr/<nombre_core>/select?<parametro>=<valor>&..'`
 
 ## Parametros:
 
@@ -30,38 +30,38 @@ Material para presentar en el taller de RI en la INFONOR 2017
 5.	**wt**: Formato de salida del resultado de la consulta (JSON, XML, etc).
 
 ## AdminUI
-`<IP>:<port>/solr`
++ `<IP>:<port>/solr`
 
 
 
-ELK
+# ELK
 
-ElasticSearch
+## ElasticSearch
 
-iniciar ElasticSearch
-bin/elasticsearch
+### iniciar ElasticSearch
++ `bin/elasticsearch`
 
-estado cluster
-curl -XGET '<ip>:9200/_cat/health?v&pretty'
+### estado cluster
++ `curl -XGET '<ip>:9200/_cat/health?v&pretty'`
   
-ver nodos del cluster
-curl -XGET '<ip>:9200/_cat/nodes?v&pretty'
+### ver nodos del cluster
++ `curl -XGET '<ip>:9200/_cat/nodes?v&pretty'`
 
-ver indices
-curl -XGET '<ip>:9200/_cat/indices?v&pretty'
+### ver indices
++ `curl -XGET '<ip>:9200/_cat/indices?v&pretty'`
 
-crear indice
-curl -XPUT '<ip>:9200/<nombre_indice>?pretty&pretty'
+### crear indice
++ `curl -XPUT '<ip>:9200/<nombre_indice>?pretty&pretty'`
   
-indexar ingreso de datos manual
+### indexar ingreso de datos manual
 
-curl -XPUT '<ip>:9200/<nombre_indice>/external/<id>?pretty&pretty' -H 'Content-Type: application/json' -d'{ "<clave>": "<valor>" }'
++ `curl -XPUT '<ip>:9200/<nombre_indice>/external/<id>?pretty&pretty' -H 'Content-Type: application/json' -d'{ "<clave>": "<valor>" }'`
 
-indexar archivo json
-curl -XPOST '<ip>:9200/<nombre_indice>/<tipo>/_bulk?pretty&refresh' --data-binary "@<nombre_archivo>.json"
+### indexar archivo json
++ `curl -XPOST '<ip>:9200/<nombre_indice>/<tipo>/_bulk?pretty&refresh' --data-binary "@<nombre_archivo>.json"`
   
-busqueda 
-curl -XGET '<ip>:9200/nombre_indice/_search?<parametro>=<valor>&pretty&pretty'
+### busqueda 
++ `curl -XGET '<ip>:9200/nombre_indice/_search?<parametro>=<valor>&pretty&pretty'`
 
 
 
