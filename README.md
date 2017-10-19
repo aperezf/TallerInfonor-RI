@@ -7,7 +7,7 @@ Material para presentar en el taller de RI en la INFONOR 2017
 + `$ bin/solr start`
 
 ## Crear core
-+ `$ bin/solr -c <nombre_core>`
++ ```sh $ bin/solr -c <nombre_core>```
 
 ## Indexar archivo
 + `$ bin/post -c <nombre_core> <ruta_archivo>`
