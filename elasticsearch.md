@@ -1,24 +1,24 @@
-### iniciar ElasticSearch
+### Iniciar ElasticSearch
 + `$ bin/elasticsearch`
 
-### estado cluster
+### Estado cluster
 + `$ curl -XGET '<ip>:9200/_cat/health?v&pretty'`
   
-### ver nodos del cluster
+### Nodos del cluster
 + `$ curl -XGET '<ip>:9200/_cat/nodes?v&pretty'`
 
-### ver indices
+### Indices
 + `$ curl -XGET '<ip>:9200/_cat/indices?v&pretty'`
 
-### crear indice
+### Crear indice
 + `$ curl -XPUT '<ip>:9200/<nombre_indice>?pretty&pretty'`
   
-### indexar ingreso de datos manual
+### Indexar ingreso de datos manual
 
 + `$ curl -XPUT '<ip>:9200/<nombre_indice>/external/<id>?pretty&pretty' -H 'Content-Type: application/json' -d'{ "<clave>": "<valor>" }'`
 
-### indexar archivo json
+### Indexar archivo json
 + `$ curl -XPOST '<ip>:9200/<nombre_indice>/<tipo>/_bulk?pretty&refresh' --data-binary "@<nombre_archivo>.json"`
   
-### busqueda 
+### Busqueda
 + `$ curl -XGET '<ip>:9200/nombre_indice/_search?<parametro>=<valor>&pretty&pretty'`
