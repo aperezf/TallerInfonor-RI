@@ -2,7 +2,7 @@
 + `$ bin/solr start`
 
 ## Crear core
-+ `$ bin/solr -c <nombre_core>`
++ `$ bin/solr create -c <nombre_core>`
 
 ## Indexar archivo
 + `$ bin/post -c <nombre_core> <ruta_archivo>`
